@@ -5,6 +5,12 @@ namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
+        private ICommanderRepo _context;
+
+        public MockCommanderRepo(ICommanderRepo context)
+        {
+            _context = context;
+        }
         public IEnumerable<Command> GetAllCommands()
         {
             var Command = new List<Command>
