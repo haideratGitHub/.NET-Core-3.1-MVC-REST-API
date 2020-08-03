@@ -43,6 +43,10 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.JsonPatch": {
+              "target": "Package",
               "version": "[*, )"
             },
             "Microsoft.EntityFrameworkCore": {
